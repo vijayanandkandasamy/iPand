@@ -15,6 +15,11 @@ from flask_dropzone import Dropzone
 uploaded_filename= ""
 analysis_title_text= ""
 
+# Start of  Displaying Current Working Directory #
+current_working_directory = "Current Working Directory: " + os.getcwd()
+print(current_working_directory)
+# -- End of  Displaying Current Working Directory #
+
 # Start of Firebase Configuration & Initialization #
 
 with open('../config.json') as firebase_configuration_file:
