@@ -101,7 +101,8 @@
     <section class="inner-page">      
       <div class="container">
         <h2 class="text-center color-red"><i class="bi bi-cloud-upload"></i> Dataset Upload</h2>
-        <h4 class="text-center color-red"><i class="bi bi-card-heading"></i> {{analysis_title}}</h4>        
+        <h4 class="text-center color-red"><i class="bi bi-card-heading"></i> {{analysis_title}}</h4>
+        <h4 class="text-center color-red"><i class="bi bi-info-circle"></i> Wait Until the Dataset CSV gets uploaded before clicking on the Visualize Buttion. In case of error, Navigate back and Retry.</h2>        
         {{ dropzone.create(action='upload') }}
         {{ dropzone.load_js() }}
         {{ dropzone.config() }}      
