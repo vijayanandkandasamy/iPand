@@ -14,7 +14,7 @@ from flask_dropzone import Dropzone
 # Global Variables
 uploaded_filename= ""
 analysis_title_text= ""
-
+uploaded_file_full_url= ""
 # Initialize Flask Application
 app = Flask(__name__)
 
@@ -123,18 +123,21 @@ def pandemic_dataset_upload():
 @app.route('/pandemic_dataset_upload', methods=['POST'])
 def upload():
     global uploaded_filename
+    global uploaded_file_full_url
     file = None
     if request.method == 'POST':
         f = request.files.get('file')
-        f.save(os.path.join(os.path.dirname(__file__) + app.config['UPLOADED_PATH'], f.filename))
+        f.save(os.path.join(app.config['UPLOADED_PATH'], f.filename))
         uploaded_filename = f.filename
+        uploaded_file_full_url = os.path.join(app.config['UPLOADED_PATH'], uploaded_filename)
+        print("Uploaded File - Full URL:" + uploaded_file_full_url)
     return render_template('pandemic_dataset_upload.html', analysis_title=analysis_title_text)
 
 # iPand - Application - Pandemic - Dataset - Visualization - Route & Function - Get Request
 @app.route('/pandemic_dataset_visualization', methods=['GET'])
 def pandemic_dataset_visualization():
     def find_top_confirmed(n = 15):
-        pandemic_dataset_reader = pda.read_csv(os.path.join(os.path.dirname(__file__) + app.config['UPLOADED_PATH'], f.filename))
+        pandemic_dataset_reader = pda.read_csv(uploaded_file_full_url)
         by_country = pandemic_dataset_reader.groupby('Country_Region').sum()[['Confirmed', 'Deaths', 'Recovered', 'Active']]
         pandemic_data_frame = by_country.nlargest(n, 'Confirmed')[['Confirmed']]
         return pandemic_data_frame
@@ -142,7 +145,7 @@ def pandemic_dataset_visualization():
     pandemic_data_frame=find_top_confirmed()
     pairs=[(country,confirmed) for country,confirmed in zip(pandemic_data_frame.index,pandemic_data_frame['Confirmed'])]
 
-    pandemic_dataset_reader = pda.read_csv(os.path.join(app.config['UPLOADED_PATH'],uploaded_filename))
+    pandemic_dataset_reader = pda.read_csv(uploaded_file_full_url)
     pandemic_html_map=pandemic_dataset_reader[['Lat','Long_','Confirmed']]
     pandemic_html_map=pandemic_html_map.dropna()
     m=folium.Map(location=[34.223334,-82.461707],
