@@ -33,19 +33,19 @@ Firebase Authentication provides backend services, easy-to-use SDKs, and ready-m
 
 ###### Python Libraries:
 
-####### Pandas: 
+###### Pandas: 
 pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language. It contains extensive capabilities and features for working with time series data for all domains.
 
-####### Pyrebase4: 
+###### Pyrebase4: 
 A simple python wrapper for the Firebase API. Pyrebase4 is a python library that is used to interact with Google Firebase. Firebase provides its users with various features like authentication, database, hosting, etc. As Firebase was primarily based on JavaScript, the Pyrebase4 library was created to facilitate the Python developers.
 
-####### folium
+###### folium
 Matplotlib library is used for data visualization in various formats such as line plot, bar graph, heat maps, scatter plots, histogram etc. It contains all the graph related functionalities required from plotting to labelling.
 
-####### plotly
+###### plotly
 The plotly Python library is an interactive, open-source plotting library that supports over 40 unique chart types covering a wide range of statistical, financial, geographic, scientific, and 3-dimensional use-cases. Built on top of the Plotly JavaScript library (plotly.js), plotly enables Python users to create beautiful interactive web-based visualizations that can be displayed in Jupyter notebooks, saved to standalone HTML files, or served as part of pure Python-built web applications using Dash.
 
-####### Flask-Dropzone 
+###### Flask-Dropzone 
 Flask-Dropzone packages Dropzone.js into an extension to add file upload support for Flask. Flask-Dropzone is an useful JavaScript library that lets you upload files immediately by dragging a file to a zone and dropping it. It has abilities to send your file off to be saved in the destination mentioned. It also can handle single/multiple files drop/upload.
 
 ##### Build & Deployment:
