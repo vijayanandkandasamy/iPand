@@ -7,13 +7,16 @@ import pandas as pda
 import folium
 #import plotly.express as px
 
-from flask import render_template, request, redirect, session
-# import app
+from flask import Flask, render_template, request, redirect, session
+
 from flask_dropzone import Dropzone
 
 # Global Variables
 uploaded_filename= ""
 analysis_title_text= ""
+
+# Initialize Flask Application
+app = Flask(__name__)
 
 # Start of  Displaying Current Working Directory #
 current_working_directory = "Current Working Directory: " + os.getcwd()

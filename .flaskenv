@@ -1,1 +1,1 @@
-FLASK_APP=iPand.py
+FLASK_APP=app.py
