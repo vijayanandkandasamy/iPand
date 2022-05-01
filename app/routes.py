@@ -14,10 +14,8 @@ from flask_dropzone import Dropzone
 # Global Variables
 uploaded_filename= ""
 analysis_title_text= ""
-current_working_directory= ""
 
 # Start of  Displaying Current Working Directory #
-global current_working_directory
 current_working_directory = "Current Working Directory: " + os.getcwd()
 print(current_working_directory)
 # -- End of  Displaying Current Working Directory #
