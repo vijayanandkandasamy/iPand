@@ -103,14 +103,11 @@
         <h2 class="text-center color-red"><i class="bi bi-cloud-upload"></i> Pandemic Forecast</h2>
         <h4 class="text-center color-red"><i class="bi bi-card-heading"></i> {{analysis_title}}</h4>
         <h5 class="text-center"><font color="firebrick">Pandemic Forecast for United States for Period - 04/04/2020 - 04/07/2020</font></h5>
-          <script src="{{ url_for('static', filename='js/plotly-latest.min.js') }}"></script>         
-          <script type="text/javascript">
-              var graphs = {{lineChartJSON | safe}};
-              Plotly.plot('chart',graphs,{});        
-          </script>
+          <br><br>
+          <div id='chart' class='chart'”></div>          
       </div>
       <div class="container text-center">
-        <a href="/pandemic_dataset_visualization"><button type="button" class="btn btn-danger btn-lg btn-block text-center"><i class="bi bi-stack"></i> Save Report</button></a>
+        <a href="/save_report"><button type="button" class="btn btn-danger btn-lg btn-block text-center"><i class="bi bi-cloud-download"></i> Save Report</button></a>
       </div>
     </section>
 
@@ -144,6 +141,13 @@
 
   <!-- Application - Prime - Javascript File -->
   <script src="{{ url_for('static', filename='js/ipand_application_prime.js') }}"></script>
+  <!-- Start of Ploty - Javascript -->
+  <script src="{{ url_for('static', filename='js/plotly-latest.min.js') }}"></script>         
+  <script type="text/javascript">
+      var graphs = {{lineChartJSON | safe}};
+      Plotly.plot('chart',graphs,{});        
+  </script>
+  <!-- // End of Ploty - Javascript -->
   <!-- // End of Javascript - Section -->
 
 </body>
