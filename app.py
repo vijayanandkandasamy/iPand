@@ -126,7 +126,7 @@ def upload():
     file = None
     if request.method == 'POST':
         f = request.files.get('file')
-        f.save(os.path.join(os.path.dirname(__file__) + "/" + app.config['UPLOADED_PATH'], f.filename))
+        f.save(os.path.join(os.path.dirname(__file__) + app.config['UPLOADED_PATH'], f.filename))
         uploaded_filename = f.filename
     return render_template('pandemic_dataset_upload.html', analysis_title=analysis_title_text)
 
@@ -134,7 +134,7 @@ def upload():
 @app.route('/pandemic_dataset_visualization', methods=['GET'])
 def pandemic_dataset_visualization():
     def find_top_confirmed(n = 15):
-        pandemic_dataset_reader = pda.read_csv(os.path.join(os.path.dirname(__file__) + "/" + app.config['UPLOADED_PATH'], f.filename))
+        pandemic_dataset_reader = pda.read_csv(os.path.join(os.path.dirname(__file__) + app.config['UPLOADED_PATH'], f.filename))
         by_country = pandemic_dataset_reader.groupby('Country_Region').sum()[['Confirmed', 'Deaths', 'Recovered', 'Active']]
         pandemic_data_frame = by_country.nlargest(n, 'Confirmed')[['Confirmed']]
         return pandemic_data_frame
