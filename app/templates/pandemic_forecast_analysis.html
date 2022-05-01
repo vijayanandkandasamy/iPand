@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Start of Meta Tags - Section -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">  
+  <meta name="description" content="iPand | Intelligent Pandemic Data Time-Series Analysis & Forecasting | Vijayanand Kandasamy">
+  <meta name="keywords" content="iPand, Pandemic Data Time-Series Analysis & Forecasting, Time-Series Analysis, Vijayanand Kandasamy" />
+  <meta name="author" content="Every Web Works" />
+  <!-- // End of Meta Tags - Section -->
+
+  <!-- Site Title -->
+  <title>iPand | Intelligent Pandemic Data Time-Series Analysis & Forecasting | Vijayanand Kandasamy</title>
+
+  <!-- Start of Favicons - Section -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static',filename='images/apple-icon-57x57.png') }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static',filename='images/apple-icon-60x60.png') }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static',filename='images/apple-icon-72x72.png') }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static',filename='images/apple-icon-76x76.png') }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static',filename='images/apple-icon-114x114.png') }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static',filename='images/apple-icon-120x120.png') }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static',filename='images/apple-icon-144x144.png') }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static',filename='images/apple-icon-152x152.png') }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static',filename='images/apple-icon-180x180.png') }}">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static',filename='images/android-icon-192x192.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static',filename='images/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static',filename='images/favicon-96x96.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='images/favicon-16x16.png') }}">
+  <link rel="manifest" href="{{ url_for('static',filename='images/manifest.json') }}">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="{{ url_for('static',filename='images/ms-icon-144x144.png') }}">
+  <meta name="theme-color" content="#ffffff">
+  <!-- // End of Favicons - Section -->
+
+  <!-- Start of CSS - Section -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/animate.css/animate.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/boxicons/css/boxicons.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/glightbox/css/glightbox.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='vendor/swiper/swiper-bundle.min.css') }}">
+
+  <!-- Application Prime - Style Sheet -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/ipand_application_style.css') }}">
+  <!-- Drag & Drop - File Upload - Style Sheet -->
+  {{ dropzone.load_css() }}
+  {{ dropzone.style('border: 2px dashed #FF4B2B; margin: 10%; min-height: 400px;') }}
+  <!-- Custom - Style Sheet -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/custom_style.css') }}">
+  <!-- // End of CSS - Section -->
+</head>
+
+<body>
+
+  <!-- Start of Header - Section -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img src="" align="middle" />
+      <a href="/home" class="logo"><img src="{{url_for('static', filename='images/logo_ipand.png')}}" alt="Logo | iPand | Intelligent Pandemic Data Time-Series Analysis & Forecasting" class="img-fluid"></a>
+
+      <!-- Start of Navbar -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/home">Home</a></li>
+          <li><a class="nav-link scrollto" href="/read_me">Read Me</a></li>          
+          <li><a class="getstarted scrollto active" href="/pandemic_forecast_analysis">Pandemic Forecast Analysis</a></li>
+          <li><a class="getstarted scrollto" href="/my_reports">My Reports</a></li>
+          <li><a class="nav-link" href="/index"><button type="button" class="btn btn-outline-danger text-center"><strong><i class="bi bi-power"></i>&nbsp;</strong></button></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- // End of Navbar -->
+
+    </div>
+  </header>
+  <!-- // End of Header - Section -->
+
+  <!-- Start of Main - Section -->
+  <main id="main">
+
+    <!-- Start of Breadcrumbs - Section -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Pandemic Forecast Analysis</h2>
+          <ol>
+            <li><a href="/home">Home</a></li>
+            <li>Pandemic Forecast Analysis</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+    <!-- // End of Breadcrumbs - Section -->
+
+    <section class="inner-page">      
+      <div class="container">
+        <h2 class="text-center color-red">Pandemic Forecast Analysis</h2>
+        <br><br>
+        <form action="/pandemic_forecast_analysis" method="post">
+          <h4 class="form-label color-red"><i class="bi bi-card-heading"></i> Time Series Analysis - Title</h4>
+          <div class="mb-3">            
+            <input type="text" class="form-control" id="analysis_title_text" name="analysis_title_text" aria-describedby="analysis_title_help_text" placeholder="Enter the title of your Time Series Analysis for reference" required>
+            <div id="analysis_title_help_text" class="form-text">e.g.: Product Sales - Q1, Electricity Consumption etc.</div>
+          </div>
+          <br>
+          <h4 class="form-label color-red"><i class="bi bi-table"></i> Dataset - Input</h4>
+          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="dataset_input" id="dataset_input_file_upload">
+            <label class="form-check-label" for="dataset_input_file_upload">
+              Dataset - File Upload
+            </label>
+          </div>          
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="dataset_input" id="dataset_input_url" disabled>
+            <label class="form-check-label" for="dataset_input_url">
+              Dataset - URL - Beta Feature
+            </label>
+          </div>
+          <br><br>
+          <button type="submit" class="btn btn-danger btn-lg btn-block text-center"><i class="bi bi-cloud-upload"></i> Proceed to Next Step</button>
+        </form>
+        <br><br><br><br><br><br><br><br><br>
+      </div>      
+    </section>
+
+  </main>
+  <!-- // End of Main - Section -->
+
+  <!-- Start of Footer - Section -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2022 - <strong><span>Vijayanand Kandasamy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Crafted by <a href="#">Vijayanand Kandasamy</a>
+      </div>
+    </div>
+  </footer>
+  <!-- // End of Footer - Section -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Start of Javascript - Section -->
+  <!-- Start of Vendor JS Files -->
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/purecounter/purecounter.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <!-- // End of Vendor JS Files --> 
+
+  <!-- Application - Prime - Javascript File -->
+  <script src="{{ url_for('static', filename='js/ipand_application_prime.js') }}"></script>
+  <!-- // End of Javascript - Section -->
+
+</body>
+</html>

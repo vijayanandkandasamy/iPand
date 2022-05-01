@@ -1,0 +1,51 @@
+.color-red {
+  color: #FF4B2B !important;
+}
+
+.color-black {
+  color: #000 !important;
+}
+
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+.alert-success .alert-link {
+  color: #0c4128;
+}
+
+.alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+.alert-danger .alert-link {
+  color: #6a1a21;
+}
+
+/* Drop Zone - Font & Icon - Style*/
+
+.dz-default{
+  color: #FF4B2B !important;
+  font-size: 25px !important;
+}
+
+.dz-default span::after{
+  content: "\A";
+  white-space: pre;
+}
+.dz-default::after{
+  font-size: 100px;
+  color: #FF4B2B;
+  content: "\f2c0";
+  font-family: 'bootstrap-icons';
+}
