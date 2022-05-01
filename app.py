@@ -165,8 +165,8 @@ def pandemic_dataset_visualization():
 def pandemic_forecast():
     forecast_file_full_url = os.path.join(app.config['UPLOADED_PATH'], 'covid_19_prediction_united_states.csv')
     pandemic_forecast_dataset_reader = pda.read_csv(forecast_file_full_url)
-    pandemic_forecast_chart = px.scatter(pandemic_forecast_dataset_reader, x='Date', y='Predicted_Cases', color='Territory', name="Pandemic Forecast for United States for Period", hover_data=['Territory', 'Predicted_Cases'])
-    pandemic_forecast_chart.update_traces(mode='markers+lines')
+    pandemic_forecast_chart = px.scatter(pandemic_forecast_dataset_reader, x='Date', y='Predicted_Cases', color='Territory', hover_data=['Territory', 'Predicted_Cases'])
+    pandemic_forecast_chart.update_traces(mode='lines+markers')
     lineChartJSON = json.dumps(pandemic_forecast_chart, cls=plotly.utils.PlotlyJSONEncoder)
     return render_template('pandemic_forecast.html', lineChartJSON=lineChartJSON)
 # iPand - Application - Pandemic - Dataset - Visualization - Route & Function - Get Request
