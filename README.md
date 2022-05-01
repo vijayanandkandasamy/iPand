@@ -26,9 +26,27 @@ The Web application is being built on Flask-Python micro web framework, consider
 The Application’s front end user interface will be designed using Bootstrap Framework which is imported as a dependency in the Flask Web Framework. All the UI customizations is being handled in HTML5, CSS & JS files that we create for the users to interact with the iPand application.
 
 ##### Back End:
+The Backend of iPand web application is Python language. Javascript is used to manipulate the web page DOM elements. The below python libraries are currently used in our project to experiment with the Time Series Analysis, Visualization and Forecast reporting.
 
-The Backend of iPand web application is Python language. Javascript is used to manipulate the web page DOM elements. The below python libraries are currently used in our project to experiment with the Time Series Analysis and Forecast reporting.
+###### Firebase Authentication:
+Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to web applications. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more. iPand Application uses Firebase Authentication API to authenticate users into the system. Also the same API is used to register the Users into the System. iPand uses Email ID / Password option for user signup and login.
 
-###### Pandas:
+###### Python Libraries:
 
+####### Pandas: 
 pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language. It contains extensive capabilities and features for working with time series data for all domains.
+
+####### Pyrebase4: 
+A simple python wrapper for the Firebase API. Pyrebase4 is a python library that is used to interact with Google Firebase. Firebase provides its users with various features like authentication, database, hosting, etc. As Firebase was primarily based on JavaScript, the Pyrebase4 library was created to facilitate the Python developers.
+
+####### folium
+Matplotlib library is used for data visualization in various formats such as line plot, bar graph, heat maps, scatter plots, histogram etc. It contains all the graph related functionalities required from plotting to labelling.
+
+####### plotly
+The plotly Python library is an interactive, open-source plotting library that supports over 40 unique chart types covering a wide range of statistical, financial, geographic, scientific, and 3-dimensional use-cases. Built on top of the Plotly JavaScript library (plotly.js), plotly enables Python users to create beautiful interactive web-based visualizations that can be displayed in Jupyter notebooks, saved to standalone HTML files, or served as part of pure Python-built web applications using Dash.
+
+####### Flask-Dropzone 
+Flask-Dropzone packages Dropzone.js into an extension to add file upload support for Flask. Flask-Dropzone is an useful JavaScript library that lets you upload files immediately by dragging a file to a zone and dropping it. It has abilities to send your file off to be saved in the destination mentioned. It also can handle single/multiple files drop/upload.
+
+##### Build & Deployment:
+The iPand Application is hosted in the Heroku Platform. The source code is available in github and as well as updated in the Heroku Git Repository. Due to recent change of Heroku – Github Integration, the Heroku Git has been used to deploy the application in Heroku.
