@@ -5,15 +5,24 @@ import json
 import pandas as pda
 #import pandas as pandas_html_map
 import folium
-#import plotly.express as px
+import plotly
+import plotly.express as px
 
-from flask import render_template, request, redirect, session
-from app import app
+from flask import Flask, render_template, request, redirect, session
+
 from flask_dropzone import Dropzone
 
 # Global Variables
 uploaded_filename= ""
 analysis_title_text= ""
+uploaded_file_full_url= ""
+# Initialize Flask Application
+app = Flask(__name__)
+
+# Start of  Displaying Current Working Directory #
+current_working_directory = "Current Working Directory: " + os.getcwd()
+print(current_working_directory)
+# -- End of  Displaying Current Working Directory #
 
 # Start of Firebase Configuration & Initialization #
 
@@ -115,18 +124,21 @@ def pandemic_dataset_upload():
 @app.route('/pandemic_dataset_upload', methods=['POST'])
 def upload():
     global uploaded_filename
+    global uploaded_file_full_url
     file = None
     if request.method == 'POST':
         f = request.files.get('file')
-        f.save(os.path.join(app.config['UPLOADED_PATH'],f.filename))
+        f.save(os.path.join(app.config['UPLOADED_PATH'], f.filename))
         uploaded_filename = f.filename
+        uploaded_file_full_url = os.path.join(app.config['UPLOADED_PATH'], uploaded_filename)
+        print("Uploaded File - Full URL:" + uploaded_file_full_url)
     return render_template('pandemic_dataset_upload.html', analysis_title=analysis_title_text)
 
 # iPand - Application - Pandemic - Dataset - Visualization - Route & Function - Get Request
 @app.route('/pandemic_dataset_visualization', methods=['GET'])
 def pandemic_dataset_visualization():
     def find_top_confirmed(n = 15):
-        pandemic_dataset_reader = pda.read_csv(os.path.join(app.config['UPLOADED_PATH'],uploaded_filename))
+        pandemic_dataset_reader = pda.read_csv(uploaded_file_full_url)
         by_country = pandemic_dataset_reader.groupby('Country_Region').sum()[['Confirmed', 'Deaths', 'Recovered', 'Active']]
         pandemic_data_frame = by_country.nlargest(n, 'Confirmed')[['Confirmed']]
         return pandemic_data_frame
@@ -134,7 +146,7 @@ def pandemic_dataset_visualization():
     pandemic_data_frame=find_top_confirmed()
     pairs=[(country,confirmed) for country,confirmed in zip(pandemic_data_frame.index,pandemic_data_frame['Confirmed'])]
 
-    pandemic_dataset_reader = pda.read_csv(os.path.join(app.config['UPLOADED_PATH'],uploaded_filename))
+    pandemic_dataset_reader = pda.read_csv(uploaded_file_full_url)
     pandemic_html_map=pandemic_dataset_reader[['Lat','Long_','Confirmed']]
     pandemic_html_map=pandemic_html_map.dropna()
     m=folium.Map(location=[34.223334,-82.461707],
@@ -149,6 +161,14 @@ def pandemic_dataset_visualization():
     html_map=m._repr_html_()   
     return render_template('pandemic_dataset_visualization.html', table=pandemic_data_frame, cmap=html_map, pairs=pairs, analysis_title=analysis_title_text)
 
+@app.route('/pandemic_forecast', methods=['GET'])
+def pandemic_forecast():
+    forecast_file_full_url = os.path.join(app.config['UPLOADED_PATH'], 'covid_19_prediction_united_states.csv')
+    pandemic_forecast_dataset_reader = pda.read_csv(forecast_file_full_url)
+    pandemic_forecast_chart = px.scatter(pandemic_forecast_dataset_reader, x='Date', y='Predicted_Cases', color='Territory', hover_data=['Territory', 'Predicted_Cases'])
+    pandemic_forecast_chart.update_traces(mode='lines+markers')
+    lineChartJSON = json.dumps(pandemic_forecast_chart, cls=plotly.utils.PlotlyJSONEncoder)
+    return render_template('pandemic_forecast.html', lineChartJSON=lineChartJSON)
 # iPand - Application - Pandemic - Dataset - Visualization - Route & Function - Get Request
 
 @app.route('/my_reports', methods=['GET', 'POST'])

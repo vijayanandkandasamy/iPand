@@ -1,0 +1,469 @@
+Date,Territory,Predicted_Cases,Confirmed_Cases
+04-04-2020,Alabama,1570,1495
+04-04-2020,Alaska,165,157
+04-04-2020,Alberta,1017,969
+04-04-2020,Anguilla,3,3
+04-04-2020,Arizona,2034,1937
+04-04-2020,Arkansas,739,704
+04-04-2020,Aruba,65,62
+04-04-2020,Australian Capital Territory,96,91
+04-04-2020,Beijing,613,584
+04-04-2020,Bermuda,37,35
+04-04-2020,"Bonaire, Sint Eustatius and Saba",2,2
+04-04-2020,British Columbia,1233,1174
+04-04-2020,British Virgin Islands,3,3
+04-04-2020,California,12604,12004
+04-04-2020,Cayman Islands,29,28
+04-04-2020,Channel Islands,244,232
+04-04-2020,Colorado,3929,3742
+04-04-2020,Connecticut,5160,4914
+04-04-2020,Curacao,12,11
+04-04-2020,Delaware,473,450
+04-04-2020,Diamond Princess,51,49
+04-04-2020,District of Columbia,795,757
+04-04-2020,Faroe Islands,188,179
+04-04-2020,Florida,10781,10268
+04-04-2020,French Guiana,60,57
+04-04-2020,French Polynesia,41,39
+04-04-2020,Fujian,366,349
+04-04-2020,Georgia,6123,5831
+04-04-2020,Gibraltar,100,95
+04-04-2020,Grand Princess,122,116
+04-04-2020,Greenland,11,10
+04-04-2020,Guadeloupe,137,130
+04-04-2020,Guam,88,84
+04-04-2020,Guangdong,1590,1514
+04-04-2020,Hawaii,335,319
+04-04-2020,Hebei,342,326
+04-04-2020,Heilongjiang,513,489
+04-04-2020,Hong Kong,887,845
+04-04-2020,Hubei,71192,67802
+04-04-2020,Idaho,936,891
+04-04-2020,Illinois,9349,8904
+04-04-2020,Indiana,3609,3437
+04-04-2020,Iowa,734,699
+04-04-2020,Isle of Man,120,114
+04-04-2020,Jiangsu,684,651
+04-04-2020,Kansas,660,629
+04-04-2020,Kentucky,809,770
+04-04-2020,Louisiana,10812,10297
+04-04-2020,Macau,45,43
+04-04-2020,Maine,454,432
+04-04-2020,Manitoba,191,182
+04-04-2020,Martinique,150,143
+04-04-2020,Maryland,2896,2758
+04-04-2020,Massachusetts,10922,10402
+04-04-2020,Mayotte,134,128
+04-04-2020,Michigan,13381,12744
+04-04-2020,Minnesota,827,788
+04-04-2020,Mississippi,1426,1358
+04-04-2020,Missouri,1957,1864
+04-04-2020,Montana,255,243
+04-04-2020,Montserrat,6,6
+04-04-2020,Nebraska,293,279
+04-04-2020,Nevada,1590,1514
+04-04-2020,New Brunswick,96,91
+04-04-2020,New Caledonia,19,18
+04-04-2020,New Hampshire,503,479
+04-04-2020,New Jersey,31390,29895
+04-04-2020,New Mexico,561,534
+04-04-2020,New South Wales,2508,2389
+04-04-2020,New York,108136,102987
+04-04-2020,Newfoundland and Labrador,205,195
+04-04-2020,North Carolina,2364,2251
+04-04-2020,North Dakota,182,173
+04-04-2020,Northern Mariana Islands,8,8
+04-04-2020,Northern Territory,23,22
+04-04-2020,Northwest Territories,2,2
+04-04-2020,Nova Scotia,217,207
+04-04-2020,Ohio,3478,3312
+04-04-2020,Oklahoma,1040,990
+04-04-2020,Ontario,3418,3255
+04-04-2020,Oregon,944,899
+04-04-2020,Pennsylvania,8999,8570
+04-04-2020,Prince Edward Island,23,22
+04-04-2020,Puerto Rico,332,316
+04-04-2020,Quebec,6406,6101
+04-04-2020,Queensland,917,873
+04-04-2020,Recovered,0,0
+04-04-2020,Reunion,337,321
+04-04-2020,Rhode Island,747,711
+04-04-2020,Saint Barthelemy,6,6
+04-04-2020,Saskatchewan,231,220
+04-04-2020,Shaanxi,268,255
+04-04-2020,Shandong,817,778
+04-04-2020,Shanghai,552,526
+04-04-2020,Sichuan,583,555
+04-04-2020,Sint Maarten,24,23
+04-04-2020,South Australia,416,396
+04-04-2020,South Carolina,1785,1700
+04-04-2020,South Dakota,196,187
+04-04-2020,St Martin,23,22
+04-04-2020,Tasmania,78,74
+04-04-2020,Tennessee,3220,3067
+04-04-2020,Texas,6021,5734
+04-04-2020,Tianjin,189,180
+04-04-2020,Turks and Caicos Islands,5,5
+04-04-2020,Utah,1318,1255
+04-04-2020,Vermont,408,389
+04-04-2020,Victoria,1139,1085
+04-04-2020,Virgin Islands,39,37
+04-04-2020,Virginia,2113,2012
+04-04-2020,Washington,7188,6846
+04-04-2020,West Virginia,249,237
+04-04-2020,Western Australia,420,400
+04-04-2020,Wisconsin,2113,2012
+04-04-2020,Wyoming,170,162
+04-04-2020,Yukon,6,6
+04-04-2020,Zhejiang,1323,1260
+05-04-2020,Alabama,1633,1570
+05-04-2020,Alaska,172,165
+05-04-2020,Alberta,1058,1017
+05-04-2020,Anguilla,3,3
+05-04-2020,Arizona,2115,2034
+05-04-2020,Arkansas,769,739
+05-04-2020,Aruba,68,65
+05-04-2020,Australian Capital Territory,100,96
+05-04-2020,Beijing,638,613
+05-04-2020,Bermuda,38,37
+05-04-2020,"Bonaire, Sint Eustatius and Saba",2,2
+05-04-2020,British Columbia,1282,1233
+05-04-2020,British Virgin Islands,3,3
+05-04-2020,California,13108,12604
+05-04-2020,Cayman Islands,30,29
+05-04-2020,Channel Islands,254,244
+05-04-2020,Colorado,4086,3929
+05-04-2020,Connecticut,5366,5160
+05-04-2020,Curacao,12,12
+05-04-2020,Delaware,492,473
+05-04-2020,Diamond Princess,53,51
+05-04-2020,District of Columbia,827,795
+05-04-2020,Faroe Islands,196,188
+05-04-2020,Florida,11212,10781
+05-04-2020,French Guiana,62,60
+05-04-2020,French Polynesia,43,41
+05-04-2020,Fujian,381,366
+05-04-2020,Georgia,6368,6123
+05-04-2020,Gibraltar,104,100
+05-04-2020,Grand Princess,127,122
+05-04-2020,Greenland,11,11
+05-04-2020,Guadeloupe,142,137
+05-04-2020,Guam,92,88
+05-04-2020,Guangdong,1654,1590
+05-04-2020,Hawaii,348,335
+05-04-2020,Hebei,356,342
+05-04-2020,Heilongjiang,534,513
+05-04-2020,Hong Kong,922,887
+05-04-2020,Hubei,74040,71192
+05-04-2020,Idaho,973,936
+05-04-2020,Illinois,9723,9349
+05-04-2020,Indiana,3753,3609
+05-04-2020,Iowa,763,734
+05-04-2020,Isle of Man,125,120
+05-04-2020,Jiangsu,711,684
+05-04-2020,Kansas,686,660
+05-04-2020,Kentucky,841,809
+05-04-2020,Louisiana,11244,10812
+05-04-2020,Macau,47,45
+05-04-2020,Maine,472,454
+05-04-2020,Manitoba,199,191
+05-04-2020,Martinique,156,150
+05-04-2020,Maryland,3012,2896
+05-04-2020,Massachusetts,11359,10922
+05-04-2020,Mayotte,139,134
+05-04-2020,Michigan,13916,13381
+05-04-2020,Minnesota,860,827
+05-04-2020,Mississippi,1483,1426
+05-04-2020,Missouri,2035,1957
+05-04-2020,Montana,265,255
+05-04-2020,Montserrat,6,6
+05-04-2020,Nebraska,305,293
+05-04-2020,Nevada,1654,1590
+05-04-2020,New Brunswick,100,96
+05-04-2020,New Caledonia,20,19
+05-04-2020,New Hampshire,523,503
+05-04-2020,New Jersey,32646,31390
+05-04-2020,New Mexico,583,561
+05-04-2020,New South Wales,2608,2508
+05-04-2020,New York,112461,108136
+05-04-2020,Newfoundland and Labrador,213,205
+05-04-2020,North Carolina,2459,2364
+05-04-2020,North Dakota,189,182
+05-04-2020,Northern Mariana Islands,8,8
+05-04-2020,Northern Territory,24,23
+05-04-2020,Northwest Territories,2,2
+05-04-2020,Nova Scotia,226,217
+05-04-2020,Ohio,3617,3478
+05-04-2020,Oklahoma,1082,1040
+05-04-2020,Ontario,3555,3418
+05-04-2020,Oregon,982,944
+05-04-2020,Pennsylvania,9359,8999
+05-04-2020,Prince Edward Island,24,23
+05-04-2020,Puerto Rico,345,332
+05-04-2020,Quebec,6662,6406
+05-04-2020,Queensland,954,917
+05-04-2020,Recovered,0,0
+05-04-2020,Reunion,350,337
+05-04-2020,Rhode Island,777,747
+05-04-2020,Saint Barthelemy,6,6
+05-04-2020,Saskatchewan,240,231
+05-04-2020,Shaanxi,279,268
+05-04-2020,Shandong,850,817
+05-04-2020,Shanghai,574,552
+05-04-2020,Sichuan,606,583
+05-04-2020,Sint Maarten,25,24
+05-04-2020,South Australia,433,416
+05-04-2020,South Carolina,1856,1785
+05-04-2020,South Dakota,204,196
+05-04-2020,St Martin,24,23
+05-04-2020,Tasmania,81,78
+05-04-2020,Tennessee,3349,3220
+05-04-2020,Texas,6262,6021
+05-04-2020,Tianjin,197,189
+05-04-2020,Turks and Caicos Islands,5,5
+05-04-2020,Utah,1371,1318
+05-04-2020,Vermont,424,408
+05-04-2020,Victoria,1185,1139
+05-04-2020,Virgin Islands,41,39
+05-04-2020,Virginia,2198,2113
+05-04-2020,Washington,7476,7188
+05-04-2020,West Virginia,259,249
+05-04-2020,Western Australia,437,420
+05-04-2020,Wisconsin,2198,2113
+05-04-2020,Wyoming,177,170
+05-04-2020,Yukon,6,6
+05-04-2020,Zhejiang,1376,1323
+06-04-2020,Alabama,1731,1633
+06-04-2020,Alaska,182,172
+06-04-2020,Alberta,1121,1058
+06-04-2020,Anguilla,3,3
+06-04-2020,Arizona,2242,2115
+06-04-2020,Arkansas,815,769
+06-04-2020,Aruba,72,68
+06-04-2020,Australian Capital Territory,106,100
+06-04-2020,Beijing,676,638
+06-04-2020,Bermuda,40,38
+06-04-2020,"Bonaire, Sint Eustatius and Saba",2,2
+06-04-2020,British Columbia,1359,1282
+06-04-2020,British Virgin Islands,3,3
+06-04-2020,California,13894,13108
+06-04-2020,Cayman Islands,32,30
+06-04-2020,Channel Islands,269,254
+06-04-2020,Colorado,4331,4086
+06-04-2020,Connecticut,5688,5366
+06-04-2020,Curacao,13,12
+06-04-2020,Delaware,522,492
+06-04-2020,Diamond Princess,56,53
+06-04-2020,District of Columbia,877,827
+06-04-2020,Faroe Islands,208,196
+06-04-2020,Florida,11885,11212
+06-04-2020,French Guiana,66,62
+06-04-2020,French Polynesia,46,43
+06-04-2020,Fujian,404,381
+06-04-2020,Georgia,6750,6368
+06-04-2020,Gibraltar,110,104
+06-04-2020,Grand Princess,135,127
+06-04-2020,Greenland,12,11
+06-04-2020,Guadeloupe,151,142
+06-04-2020,Guam,98,92
+06-04-2020,Guangdong,1753,1654
+06-04-2020,Hawaii,369,348
+06-04-2020,Hebei,377,356
+06-04-2020,Heilongjiang,566,534
+06-04-2020,Hong Kong,977,922
+06-04-2020,Hubei,78482,74040
+06-04-2020,Idaho,1031,973
+06-04-2020,Illinois,10306,9723
+06-04-2020,Indiana,3978,3753
+06-04-2020,Iowa,809,763
+06-04-2020,Isle of Man,133,125
+06-04-2020,Jiangsu,754,711
+06-04-2020,Kansas,727,686
+06-04-2020,Kentucky,891,841
+06-04-2020,Louisiana,11919,11244
+06-04-2020,Macau,50,47
+06-04-2020,Maine,500,472
+06-04-2020,Manitoba,211,199
+06-04-2020,Martinique,165,156
+06-04-2020,Maryland,3193,3012
+06-04-2020,Massachusetts,12041,11359
+06-04-2020,Mayotte,147,139
+06-04-2020,Michigan,14751,13916
+06-04-2020,Minnesota,912,860
+06-04-2020,Mississippi,1572,1483
+06-04-2020,Missouri,2157,2035
+06-04-2020,Montana,281,265
+06-04-2020,Montserrat,6,6
+06-04-2020,Nebraska,323,305
+06-04-2020,Nevada,1753,1654
+06-04-2020,New Brunswick,106,100
+06-04-2020,New Caledonia,21,20
+06-04-2020,New Hampshire,554,523
+06-04-2020,New Jersey,34605,32646
+06-04-2020,New Mexico,618,583
+06-04-2020,New South Wales,2764,2608
+06-04-2020,New York,119209,112461
+06-04-2020,Newfoundland and Labrador,226,213
+06-04-2020,North Carolina,2607,2459
+06-04-2020,North Dakota,200,189
+06-04-2020,Northern Mariana Islands,8,8
+06-04-2020,Northern Territory,25,24
+06-04-2020,Northwest Territories,2,2
+06-04-2020,Nova Scotia,240,226
+06-04-2020,Ohio,3834,3617
+06-04-2020,Oklahoma,1147,1082
+06-04-2020,Ontario,3768,3555
+06-04-2020,Oregon,1041,982
+06-04-2020,Pennsylvania,9921,9359
+06-04-2020,Prince Edward Island,25,24
+06-04-2020,Puerto Rico,366,345
+06-04-2020,Quebec,7062,6662
+06-04-2020,Queensland,1011,954
+06-04-2020,Recovered,0,0
+06-04-2020,Reunion,371,350
+06-04-2020,Rhode Island,824,777
+06-04-2020,Saint Barthelemy,6,6
+06-04-2020,Saskatchewan,254,240
+06-04-2020,Shaanxi,296,279
+06-04-2020,Shandong,901,850
+06-04-2020,Shanghai,608,574
+06-04-2020,Sichuan,642,606
+06-04-2020,Sint Maarten,27,25
+06-04-2020,South Australia,459,433
+06-04-2020,South Carolina,1967,1856
+06-04-2020,South Dakota,216,204
+06-04-2020,St Martin,25,24
+06-04-2020,Tasmania,86,81
+06-04-2020,Tennessee,3550,3349
+06-04-2020,Texas,6638,6262
+06-04-2020,Tianjin,209,197
+06-04-2020,Turks and Caicos Islands,5,5
+06-04-2020,Utah,1453,1371
+06-04-2020,Vermont,449,424
+06-04-2020,Victoria,1256,1185
+06-04-2020,Virgin Islands,43,41
+06-04-2020,Virginia,2330,2198
+06-04-2020,Washington,7925,7476
+06-04-2020,West Virginia,275,259
+06-04-2020,Western Australia,463,437
+06-04-2020,Wisconsin,2330,2198
+06-04-2020,Wyoming,188,177
+06-04-2020,Yukon,6,6
+06-04-2020,Zhejiang,1459,1376
+07-04-2020,Alabama,1845,1731
+07-04-2020,Alaska,194,182
+07-04-2020,Alberta,1195,1121
+07-04-2020,Anguilla,3,3
+07-04-2020,Arizona,2390,2242
+07-04-2020,Arkansas,869,815
+07-04-2020,Aruba,77,72
+07-04-2020,Australian Capital Territory,113,106
+07-04-2020,Beijing,721,676
+07-04-2020,Bermuda,43,40
+07-04-2020,"Bonaire, Sint Eustatius and Saba",2,2
+07-04-2020,British Columbia,1449,1359
+07-04-2020,British Virgin Islands,3,3
+07-04-2020,California,14811,13894
+07-04-2020,Cayman Islands,34,32
+07-04-2020,Channel Islands,287,269
+07-04-2020,Colorado,4617,4331
+07-04-2020,Connecticut,6063,5688
+07-04-2020,Curacao,14,13
+07-04-2020,Delaware,556,522
+07-04-2020,Diamond Princess,60,56
+07-04-2020,District of Columbia,935,877
+07-04-2020,Faroe Islands,222,208
+07-04-2020,Florida,12669,11885
+07-04-2020,French Guiana,70,66
+07-04-2020,French Polynesia,49,46
+07-04-2020,Fujian,431,404
+07-04-2020,Georgia,7196,6750
+07-04-2020,Gibraltar,117,110
+07-04-2020,Grand Princess,144,135
+07-04-2020,Greenland,13,12
+07-04-2020,Guadeloupe,161,151
+07-04-2020,Guam,104,98
+07-04-2020,Guangdong,1869,1753
+07-04-2020,Hawaii,393,369
+07-04-2020,Hebei,402,377
+07-04-2020,Heilongjiang,603,566
+07-04-2020,Hong Kong,1041,977
+07-04-2020,Hubei,83662,78482
+07-04-2020,Idaho,1099,1031
+07-04-2020,Illinois,10986,10306
+07-04-2020,Indiana,4241,3978
+07-04-2020,Iowa,862,809
+07-04-2020,Isle of Man,142,133
+07-04-2020,Jiangsu,804,754
+07-04-2020,Kansas,775,727
+07-04-2020,Kentucky,950,891
+07-04-2020,Louisiana,12706,11919
+07-04-2020,Macau,53,50
+07-04-2020,Maine,533,500
+07-04-2020,Manitoba,225,211
+07-04-2020,Martinique,176,165
+07-04-2020,Maryland,3404,3193
+07-04-2020,Massachusetts,12836,12041
+07-04-2020,Mayotte,157,147
+07-04-2020,Michigan,15725,14751
+07-04-2020,Minnesota,972,912
+07-04-2020,Mississippi,1676,1572
+07-04-2020,Missouri,2299,2157
+07-04-2020,Montana,300,281
+07-04-2020,Montserrat,6,6
+07-04-2020,Nebraska,344,323
+07-04-2020,Nevada,1869,1753
+07-04-2020,New Brunswick,113,106
+07-04-2020,New Caledonia,22,21
+07-04-2020,New Hampshire,591,554
+07-04-2020,New Jersey,36889,34605
+07-04-2020,New Mexico,659,618
+07-04-2020,New South Wales,2946,2764
+07-04-2020,New York,127077,119209
+07-04-2020,Newfoundland and Labrador,241,226
+07-04-2020,North Carolina,2779,2607
+07-04-2020,North Dakota,213,200
+07-04-2020,Northern Mariana Islands,9,8
+07-04-2020,Northern Territory,27,25
+07-04-2020,Northwest Territories,2,2
+07-04-2020,Nova Scotia,256,240
+07-04-2020,Ohio,4087,3834
+07-04-2020,Oklahoma,1223,1147
+07-04-2020,Ontario,4017,3768
+07-04-2020,Oregon,1110,1041
+07-04-2020,Pennsylvania,10576,9921
+07-04-2020,Prince Edward Island,27,25
+07-04-2020,Puerto Rico,390,366
+07-04-2020,Quebec,7528,7062
+07-04-2020,Queensland,1078,1011
+07-04-2020,Recovered,0,0
+07-04-2020,Reunion,395,371
+07-04-2020,Rhode Island,878,824
+07-04-2020,Saint Barthelemy,6,6
+07-04-2020,Saskatchewan,271,254
+07-04-2020,Shaanxi,316,296
+07-04-2020,Shandong,960,901
+07-04-2020,Shanghai,648,608
+07-04-2020,Sichuan,684,642
+07-04-2020,Sint Maarten,29,27
+07-04-2020,South Australia,489,459
+07-04-2020,South Carolina,2097,1967
+07-04-2020,South Dakota,230,216
+07-04-2020,St Martin,27,25
+07-04-2020,Tasmania,92,86
+07-04-2020,Tennessee,3784,3550
+07-04-2020,Texas,7076,6638
+07-04-2020,Tianjin,223,209
+07-04-2020,Turks and Caicos Islands,5,5
+07-04-2020,Utah,1549,1453
+07-04-2020,Vermont,479,449
+07-04-2020,Victoria,1339,1256
+07-04-2020,Virgin Islands,46,43
+07-04-2020,Virginia,2484,2330
+07-04-2020,Washington,8448,7925
+07-04-2020,West Virginia,293,275
+07-04-2020,Western Australia,494,463
+07-04-2020,Wisconsin,2484,2330
+07-04-2020,Wyoming,200,188
+07-04-2020,Yukon,6,6
+07-04-2020,Zhejiang,1555,1459
