@@ -14,15 +14,17 @@ from flask_dropzone import Dropzone
 # Global Variables
 uploaded_filename= ""
 analysis_title_text= ""
+current_working_directory= ""
 
 # Start of  Displaying Current Working Directory #
+global current_working_directory
 current_working_directory = "Current Working Directory: " + os.getcwd()
 print(current_working_directory)
 # -- End of  Displaying Current Working Directory #
 
 # Start of Firebase Configuration & Initialization #
 
-with open('../config.json') as firebase_configuration_file:
+with open((os.path.dirname(__file__) + '/../config.json')) as firebase_configuration_file:
     firebase_configuration = json.load(firebase_configuration_file)
 
 firebase = pyrebase.initialize_app(firebase_configuration)
