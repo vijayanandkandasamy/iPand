@@ -8,7 +8,7 @@ import folium
 #import plotly.express as px
 
 from flask import render_template, request, redirect, session
-from app import app
+import app
 from flask_dropzone import Dropzone
 
 # Global Variables
