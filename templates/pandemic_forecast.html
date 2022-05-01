@@ -11,7 +11,7 @@
   <!-- // End of Meta Tags - Section -->
 
   <!-- Site Title -->
-  <title>Pandemic Forecast Analysis | Dataset Upload | iPand | Intelligent Pandemic Data Time-Series Analysis & Forecasting | Vijayanand Kandasamy</title>
+  <title>Pandemic Forecast | iPand | Intelligent Pandemic Data Time-Series Analysis & Forecasting | Vijayanand Kandasamy</title>
 
   <!-- Start of Favicons - Section -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static',filename='images/apple-icon-57x57.png') }}">
@@ -87,10 +87,10 @@
     <section class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Pandemic Forecast Analysis | Dataset Upload</h2>
+          <h2>Pandemic Forecast</h2>
           <ol>
             <li><a href="/home">Home</a></li>
-            <li>Pandemic Forecast Analysis | Dataset Upload</li>
+            <li>Pandemic Forecast</li>
           </ol>
         </div>
 
@@ -100,14 +100,17 @@
 
     <section class="inner-page">      
       <div class="container">
-        <h2 class="text-center color-red"><i class="bi bi-cloud-upload"></i> Dataset Upload</h2>
-        <h4 class="text-center color-red"><i class="bi bi-card-heading"></i> {{analysis_title}}</h4>        
-        {{ dropzone.create(action='upload') }}
-        {{ dropzone.load_js() }}
-        {{ dropzone.config() }}      
+        <h2 class="text-center color-red"><i class="bi bi-cloud-upload"></i> Pandemic Forecast</h2>
+        <h4 class="text-center color-red"><i class="bi bi-card-heading"></i> {{analysis_title}}</h4>
+        <h5 class="text-center"><font color="firebrick">Pandemic Forecast for United States for Period - 04/04/2020 - 04/07/2020</font></h5>
+          <script src="{{ url_for('static', filename='js/plotly-latest.min.js') }}"></script>         
+          <script type="text/javascript">
+              var graphs = {{lineChartJSON | safe}};
+              Plotly.plot('chart',graphs,{});        
+          </script>
       </div>
       <div class="container text-center">
-        <a href="/pandemic_dataset_visualization"><button type="button" class="btn btn-danger btn-lg btn-block text-center"><i class="bi bi-stack"></i> Visualize</button></a>
+        <a href="/pandemic_dataset_visualization"><button type="button" class="btn btn-danger btn-lg btn-block text-center"><i class="bi bi-stack"></i> Save Report</button></a>
       </div>
     </section>
 

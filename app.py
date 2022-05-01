@@ -5,7 +5,8 @@ import json
 import pandas as pda
 #import pandas as pandas_html_map
 import folium
-#import plotly.express as px
+import plotly
+import plotly.express as px
 
 from flask import Flask, render_template, request, redirect, session
 
@@ -160,6 +161,14 @@ def pandemic_dataset_visualization():
     html_map=m._repr_html_()   
     return render_template('pandemic_dataset_visualization.html', table=pandemic_data_frame, cmap=html_map, pairs=pairs, analysis_title=analysis_title_text)
 
+@app.route('/pandemic_forecast', methods=['GET'])
+def pandemic_forecast():
+    forecast_file_full_url = os.path.join(app.config['UPLOADED_PATH'], 'covid_19_prediction_united_states.csv')
+    pandemic_forecast_dataset_reader = pda.read_csv(forecast_file_full_url)
+    pandemic_forecast_chart = px.scatter(pandemic_forecast_dataset_reader, x='Date', y='Predicted_Cases', color='Territory')
+    pandemic_forecast_chart.update_traces(mode='markers+lines')
+    lineChartJSON = json.dumps(pandemic_forecast_chart, cls=plotly.utils.PlotlyJSONEncoder)
+    return render_template('pandemic_forecast.html', lineChartJSON=lineChartJSON)
 # iPand - Application - Pandemic - Dataset - Visualization - Route & Function - Get Request
 
 @app.route('/my_reports', methods=['GET', 'POST'])
