@@ -17,7 +17,7 @@ analysis_title_text= ""
 
 # Start of Firebase Configuration & Initialization #
 
-with open('config.json') as firebase_configuration_file:
+with open('../config.json') as firebase_configuration_file:
     firebase_configuration = json.load(firebase_configuration_file)
 
 firebase = pyrebase.initialize_app(firebase_configuration)
